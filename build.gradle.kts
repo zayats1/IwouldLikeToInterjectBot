@@ -1,25 +1,31 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-    kotlin("js") version "1.6.21"
+    kotlin("jvm") version "1.6.21"
+    application
 }
 
 group = "org.zayats1"
-version = "0.1"
+version = "1.0-SNAPSHOT"
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("org.jetbrains.kotlinx:kotlinx-nodejs:0.0.7")
+    implementation("dev.kord:kord-core:0.7.4")
+
 }
 
-kotlin {
-    js(IR) {
-        binaries.executable()
-        nodejs {
+tasks.test {
+    useJUnitPlatform()
+}
 
-        }
-    }
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+application {
+    mainClass.set("MainKt")
 }

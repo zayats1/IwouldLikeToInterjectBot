@@ -1,0 +1,18 @@
+{
+  "name": "IwouldLikeToInterjectBot",
+  "version": "0.1",
+  "private": true,
+  "workspaces": [
+    "packages/IwouldLikeToInterjectBot",
+    "packages/IwouldLikeToInterjectBot-test",
+    "packages_imported/kotlin/1.6.21",
+    "packages_imported/kotlin-test-js-runner/1.6.21",
+    "packages_imported/kotlin-test/1.6.21"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

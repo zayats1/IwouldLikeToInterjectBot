@@ -1,8 +1,0 @@
-abi_version=1.6.0
-builtins_platform=JS
-compiler_version=1.6.21
-depends=org.jetbrains.kotlinx\:kotlinx-nodejs kotlin
-ir_version=1.0.0
-jsOutputName=IwouldLikeToInterjectBot
-metadata_version=1.4.1
-unique_name=org.zayats1\:IwouldLikeToInterjectBot

@@ -1,3 +1,3 @@
 build
 .gradle
-resources/.botToken
+src/main/resources/.botToken

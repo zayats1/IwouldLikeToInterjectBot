@@ -15,9 +15,16 @@ suspend fun main() {
     kord.on<MessageCreateEvent> {
         val linux = "linux".toRegex(RegexOption.IGNORE_CASE)
 
+        val interject = "I'd just like to interject for a moment".toRegex(RegexOption.IGNORE_CASE)
+        val match2 =   interject.find(message.content)
+
+        if (match2 != null){
+            return@on
+        }
+
         val match = linux.find(message.content) ?: return@on
 
-        val response = message.channel.createMessage("Pong!")
+        val response = message.channel.createMessage(ClassLoader.getSystemResource("MyResponse.txt").readText())
         response.addReaction(pingPong)
     }
 

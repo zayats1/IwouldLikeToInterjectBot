@@ -18,10 +18,11 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../build/classes/kotlin/main</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-core/0.7.4/74cbfdd960a8fa1b25b3ae34b4a8fcf4a256e916/kord-core-0.7.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-rest/0.7.4/3c2974c4580396872a47c24226c3d7b7f5caa801/kord-rest-0.7.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-gateway/0.7.4/4dc622370e7e7ec3ee78f1200d791d4756920d8/kord-gateway-0.7.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-common/0.7.4/40050b82d04a51cb0617fef55b60dd1f92270f34/kord-common-0.7.4.jar</arg>
+                <arg>$MODULE_DIR$/../../build/resources/main</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-core/0.8.0-M2/84443e0ddae633bb650bf45e147cb13d02282464/kord-core-0.8.0-M2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-rest/0.8.0-M2/f80bc656034b894238b1e0178f8444a2a170d241/kord-rest-0.8.0-M2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-gateway/0.8.0-M2/4bc93896561fc28318e88c4bf4fb6653b89c20cd/kord-gateway-0.8.0-M2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord/kord-common/0.8.0-M2/28f2b0567d672b1aa656a33a274a2b0e23285958/kord-common-0.8.0-M2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord.cache/cache-map/0.3.0/80a7eb20060d7a58a201f430edaf77521fd315af/cache-map-0.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.kord.cache/cache-api/0.3.0/6c1db85da8d6ab979785189928fc57a35d8b2d05/cache-api-0.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-serialization-jvm/1.6.0/ec2c03964a1ee507a1162be76e8ba7ee32b5b27e/ktor-client-serialization-jvm-1.6.0.jar</arg>
@@ -37,6 +38,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-io-jvm/1.6.0/35bc19bdc392a5a288ea11bb8d828ab010b4e73d/ktor-io-jvm-1.6.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.5.0/d8cebccdcddd029022aa8646a5a953ff88b13ac8/kotlinx-coroutines-core-jvm-1.5.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.21/eeb4d60d75e9ea9c11200d52974e522793b14fba/kotlin-stdlib-jdk8-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.36/a41f9cfe6faafb2eb83a1c7dd2d0dfd844e2a936/slf4j-simple-1.7.36.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit5/1.6.21/ed8b4f0709ee0509c5fc6ac90ab60bc54c6ce60e/kotlin-test-junit5-1.6.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.6.21/1e9d81b013e31b22da67464948869fc56c652527/kotlin-test-1.6.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.21/568c1b78a8e17a4f35b31f0a74e2916095ed74c2/kotlin-stdlib-jdk7-1.6.21.jar</arg>
@@ -44,11 +46,11 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.2.1/e472959f7e506bc534549002adee5a4f12a8fae3/kotlinx-serialization-core-jvm-1.2.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-datetime-jvm/0.2.1/11f9a2e0cf44d986812d79ae78a545b6713971e5/kotlinx-datetime-jvm-0.2.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.21/11ef67f1900634fd951bad28c53ec957fabbe5b8/kotlin-stdlib-1.6.21.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.21/5e5b55c26dbc80372a920aef60eb774b714559b8/kotlin-stdlib-common-1.6.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.6.0/b0a75795cf03841d4f9cc54099557baffc11c727/junit-platform-commons-1.6.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.6.0/f29e6318333d2303ce4965c9819cfad08de7d1e5/junit-jupiter-api-5.6.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar</arg>
               </args>

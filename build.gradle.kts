@@ -14,9 +14,11 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("dev.kord:kord-core:0.7.4")
+    implementation("dev.kord:kord-core:0.8.0-M2")
+    implementation("org.slf4j:slf4j-simple:1.7.36")
 
 }
+
 
 tasks.test {
     useJUnitPlatform()

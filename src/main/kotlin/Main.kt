@@ -2,32 +2,39 @@ import dev.kord.core.Kord
 import dev.kord.core.entity.ReactionEmoji
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.on
-import dev.kord.gateway.Intent
-import dev.kord.gateway.PrivilegedIntent
-import kotlinx.coroutines.delay
+
+const val LINUX = "Linux"
+
+const val PENGUIN_EMOJI = "\uD83D\uDC27"
+const val GNU_EMOJI = "\uD83D\uDC03"
+
+fun toEmoji(unicode: String) = ReactionEmoji.Unicode(unicode)
+
+fun getResource(name:String) = (ClassLoader.getSystemResource(name).readText())
+
+fun isFound(input: String, expected: String): Boolean {
+    val expectedRegex = expected.toRegex(RegexOption.IGNORE_CASE)
+    expectedRegex.find(input) ?: return false
+    return true
+}
 
 suspend fun main() {
-    println("IWouldLikeToInterjectBot")
+    val bot = Kord(getResource(".botToken"))
 
-    val kord = Kord(ClassLoader.getSystemResource(".botToken").readText())
-    val pingPong = ReactionEmoji.Unicode("\uD83C\uDFD3")
+    bot.on<MessageCreateEvent> {
+        val content = message.content
 
-    kord.on<MessageCreateEvent> {
-        val linux = "linux".toRegex(RegexOption.IGNORE_CASE)
+        // ignore other bots
+        if (message.author?.isBot != false) return@on
 
-        val interject = "I'd just like to interject for a moment".toRegex(RegexOption.IGNORE_CASE)
-        val match2 =   interject.find(message.content)
-
-        if (match2 != null){
-            return@on
+        if (isFound(content, LINUX)) {
+            message.channel.createMessage(getResource("MyResponse.txt"))
+            message.channel.createMessage(GNU_EMOJI)
+            message.addReaction(toEmoji(PENGUIN_EMOJI))
         }
-
-        val match = linux.find(message.content) ?: return@on
-
-        val response = message.channel.createMessage(ClassLoader.getSystemResource("MyResponse.txt").readText())
-        response.addReaction(pingPong)
+        return@on
     }
 
-    kord.login()
+    bot.login()
 }
 

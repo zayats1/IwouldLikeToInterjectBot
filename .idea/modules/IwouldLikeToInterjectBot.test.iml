@@ -65,7 +65,7 @@
               <args>
                 <arg>$MODULE_DIR$/../../build/classes/java/main</arg>
                 <arg>$MODULE_DIR$/../../build/classes/kotlin/main</arg>
-                <arg>$MODULE_DIR$/../../build/libs/IwouldLikeToInterjectBot-1.0-SNAPSHOT.jar</arg>
+                <arg>$MODULE_DIR$/../../build/libs/IwouldLikeToInterjectBot-1.0.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginClasspaths">

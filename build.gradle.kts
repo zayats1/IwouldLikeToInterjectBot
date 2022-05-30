@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.zayats1"
-version = "1.0"
+version = "1.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("dev.kord:kord-core:0.8.0-M2")
+    implementation("dev.kord:kord-core:0.8.0-M14")
     implementation("org.slf4j:slf4j-simple:1.7.36")
 
 }

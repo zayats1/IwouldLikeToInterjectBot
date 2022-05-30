@@ -2,6 +2,8 @@ import dev.kord.core.Kord
 import dev.kord.core.entity.ReactionEmoji
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.on
+import dev.kord.gateway.Intent
+import dev.kord.gateway.PrivilegedIntent
 
 const val LINUX = "Linux"
 
@@ -35,6 +37,10 @@ suspend fun main() {
         return@on
     }
 
-    bot.login()
+
+    bot.login{
+        @OptIn(PrivilegedIntent::class)
+        intents += Intent.MessageContent  // also need to enable MESSAGE CONTENT INTENT in the Bot section of the App in the Developer Portal.
+    }
 }
 

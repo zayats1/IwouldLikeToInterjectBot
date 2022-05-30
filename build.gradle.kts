@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "org.zayats1"
-version = "1.1"
+version = "1.1.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
